@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+database/*.duckdb
+database/*.duckdb.wal
+database/test_*.duckdb
+docs/report/rendered/
+~$*.docx
+*.log

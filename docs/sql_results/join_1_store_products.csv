@@ -1,0 +1,65 @@
+﻿store_name,product_name,category_name,selling_price,stock_count,shelf_location,image_path,updated_at
+CU 금오공대 정문점,동원참치 라이트스탠다드,간편식,3600,9,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,상하키친 양송이크림스프,간편식,3900,5,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,상하키친 크림스프,간편식,3800,2,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,스팸 싱글 클래식,간편식,3500,6,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,양반 쇠고기죽,간편식,3500,4,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,양반 참치죽,간편식,3700,10,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,오뚜기 3분 쇠고기카레,간편식,3800,0,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,햇반 백미밥,간편식,3600,5,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,햇반 작은공기,간편식,3700,8,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,햇반 컵반 미역국밥,간편식,3900,1,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,김치 사발면,컵라면,2000,1,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,까르보불닭볶음면 큰컵,컵라면,2200,11,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,불닭볶음면 큰컵,컵라면,2100,8,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,새우탕 큰사발,컵라면,2100,6,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,신라면 큰사발,컵라면,2200,7,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,육개장 사발면,컵라면,1900,11,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,진라면 순한맛 컵,컵라면,1800,12,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,짜파게티 큰사발,컵라면,1800,10,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,참깨라면 컵,컵라면,1900,2,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,튀김우동 큰사발,컵라면,2000,3,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,고래밥 볶음양념맛,과자,1800,8,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,꼬북칩 콘스프맛,과자,2000,12,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,마가렛트 오리지널,과자,1700,9,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,맛동산,과자,2000,1,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,매운새우깡,과자,1900,7,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,빼빼로 아몬드,과자,1900,0,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,빼빼로 초코,과자,1800,10,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,새우깡,과자,1800,4,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,양파링,과자,1700,3,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,초코송이,과자,1700,5,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,칙촉 오리지널,과자,2100,6,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,포스틱,과자,2100,0,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,포카칩 어니언,과자,1900,9,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,허니버터칩,과자,2100,4,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,데미소다 애플,음료,1800,4,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,레드불 에너지드링크,음료,2000,6,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,레쓰비 마일드,음료,2200,12,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,비타500,음료,1900,3,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,아이시스 8.0,음료,2000,2,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,웰치스 포도,음료,2000,8,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,칠성사이다 제로,음료,2100,7,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,칸타타 콘트라베이스 콜드브루 블랙,음료,1800,2,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,코카-콜라,음료,2100,5,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,펩시 제로슈거 라임,음료,1900,1,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,펩시콜라,음료,1800,11,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,포카리스웨트,음료,2200,10,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,환타 오렌지,음료,2100,11,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,덴마크 드링킹 요구르트 딸기,유제품,2000,9,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,매일우유 오리지널,유제품,2300,3,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,바나나맛우유,유제품,2000,7,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,상하목장 유기농 우유,유제품,1900,8,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,서울우유 나100%,유제품,2200,0,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,액티비아 플레인,유제품,2100,12,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,요플레 오리지널 딸기,유제품,2300,5,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,누가바,아이스크림,2200,9,6번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,메로나,아이스크림,1800,10,2번 진열대 A열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,부라보콘 화이트바닐라,아이스크림,2100,6,5번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,비비빅,아이스크림,1900,0,3번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,설레임 밀크쉐이크,아이스크림,2000,1,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,스크류바,아이스크림,2100,4,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,2080 클래식 치약,생활용품,3400,11,5번 진열대 B열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,죽염 은강고 치약,생활용품,3000,1,6번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,크리넥스 안심 물티슈,생활용품,3200,5,3번 진열대 D열,assets/images/default_product.png,2026-06-21 09:00:00
+CU 금오공대 정문점,크리넥스 휴대용 티슈,생활용품,3100,2,2번 진열대 C열,assets/images/default_product.png,2026-06-21 09:00:00

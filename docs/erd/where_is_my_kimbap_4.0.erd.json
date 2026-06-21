@@ -1,0 +1,1983 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2500,
+    "height": 1700,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 0.65,
+    "show": 294,
+    "database": 16,
+    "databaseName": "where_is_my_kimbap_4_0",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "table-01-users",
+      "table-02-stores",
+      "table-03-categories",
+      "table-04-products",
+      "table-05-inventories",
+      "table-06-carts",
+      "table-07-cart_items",
+      "table-08-orders",
+      "table-09-order_items",
+      "table-10-payments"
+    ],
+    "relationshipIds": [
+      "relationship-01",
+      "relationship-02",
+      "relationship-03",
+      "relationship-04",
+      "relationship-05",
+      "relationship-06",
+      "relationship-07",
+      "relationship-08",
+      "relationship-09",
+      "relationship-10",
+      "relationship-11",
+      "relationship-12"
+    ],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "table-01-users": {
+        "id": "table-01-users",
+        "name": "users",
+        "comment": "",
+        "columnIds": [
+          "column-01-01-user_id",
+          "column-01-02-login_id",
+          "column-01-03-password_hash",
+          "column-01-04-user_name",
+          "column-01-05-role",
+          "column-01-06-created_at"
+        ],
+        "seqColumnIds": [
+          "column-01-01-user_id",
+          "column-01-02-login_id",
+          "column-01-03-password_hash",
+          "column-01-04-user_name",
+          "column-01-05-role",
+          "column-01-06-created_at"
+        ],
+        "ui": {
+          "x": 50,
+          "y": 100,
+          "zIndex": 1,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-02-stores": {
+        "id": "table-02-stores",
+        "name": "stores",
+        "comment": "",
+        "columnIds": [
+          "column-02-01-store_id",
+          "column-02-02-source_store_key",
+          "column-02-03-store_name",
+          "column-02-04-brand",
+          "column-02-05-address",
+          "column-02-06-latitude",
+          "column-02-07-longitude",
+          "column-02-08-opening_hours",
+          "column-02-09-image_path",
+          "column-02-10-is_active"
+        ],
+        "seqColumnIds": [
+          "column-02-01-store_id",
+          "column-02-02-source_store_key",
+          "column-02-03-store_name",
+          "column-02-04-brand",
+          "column-02-05-address",
+          "column-02-06-latitude",
+          "column-02-07-longitude",
+          "column-02-08-opening_hours",
+          "column-02-09-image_path",
+          "column-02-10-is_active"
+        ],
+        "ui": {
+          "x": 1940,
+          "y": 90,
+          "zIndex": 2,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-03-categories": {
+        "id": "table-03-categories",
+        "name": "categories",
+        "comment": "",
+        "columnIds": [
+          "column-03-01-category_id",
+          "column-03-02-category_name",
+          "column-03-03-display_order"
+        ],
+        "seqColumnIds": [
+          "column-03-01-category_id",
+          "column-03-02-category_name",
+          "column-03-03-display_order"
+        ],
+        "ui": {
+          "x": 960,
+          "y": 90,
+          "zIndex": 3,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-04-products": {
+        "id": "table-04-products",
+        "name": "products",
+        "comment": "",
+        "columnIds": [
+          "column-04-01-product_id",
+          "column-04-02-category_id",
+          "column-04-03-product_name",
+          "column-04-04-manufacturer",
+          "column-04-05-package_size",
+          "column-04-06-description",
+          "column-04-07-image_path",
+          "column-04-08-is_limited"
+        ],
+        "seqColumnIds": [
+          "column-04-01-product_id",
+          "column-04-02-category_id",
+          "column-04-03-product_name",
+          "column-04-04-manufacturer",
+          "column-04-05-package_size",
+          "column-04-06-description",
+          "column-04-07-image_path",
+          "column-04-08-is_limited"
+        ],
+        "ui": {
+          "x": 960,
+          "y": 350,
+          "zIndex": 4,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-05-inventories": {
+        "id": "table-05-inventories",
+        "name": "inventories",
+        "comment": "",
+        "columnIds": [
+          "column-05-01-store_id",
+          "column-05-02-product_id",
+          "column-05-03-selling_price",
+          "column-05-04-stock_count",
+          "column-05-05-shelf_location",
+          "column-05-06-updated_at"
+        ],
+        "seqColumnIds": [
+          "column-05-01-store_id",
+          "column-05-02-product_id",
+          "column-05-03-selling_price",
+          "column-05-04-stock_count",
+          "column-05-05-shelf_location",
+          "column-05-06-updated_at"
+        ],
+        "ui": {
+          "x": 1480,
+          "y": 370,
+          "zIndex": 5,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-06-carts": {
+        "id": "table-06-carts",
+        "name": "carts",
+        "comment": "",
+        "columnIds": [
+          "column-06-01-cart_id",
+          "column-06-02-user_id",
+          "column-06-03-store_id",
+          "column-06-04-created_at",
+          "column-06-05-updated_at"
+        ],
+        "seqColumnIds": [
+          "column-06-01-cart_id",
+          "column-06-02-user_id",
+          "column-06-03-store_id",
+          "column-06-04-created_at",
+          "column-06-05-updated_at"
+        ],
+        "ui": {
+          "x": 50,
+          "y": 440,
+          "zIndex": 6,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-07-cart_items": {
+        "id": "table-07-cart_items",
+        "name": "cart_items",
+        "comment": "",
+        "columnIds": [
+          "column-07-01-cart_id",
+          "column-07-02-product_id",
+          "column-07-03-quantity",
+          "column-07-04-added_at"
+        ],
+        "seqColumnIds": [
+          "column-07-01-cart_id",
+          "column-07-02-product_id",
+          "column-07-03-quantity",
+          "column-07-04-added_at"
+        ],
+        "ui": {
+          "x": 500,
+          "y": 470,
+          "zIndex": 7,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-08-orders": {
+        "id": "table-08-orders",
+        "name": "orders",
+        "comment": "",
+        "columnIds": [
+          "column-08-01-order_id",
+          "column-08-02-user_id",
+          "column-08-03-store_id",
+          "column-08-04-pickup_barcode",
+          "column-08-05-status",
+          "column-08-06-total_amount",
+          "column-08-07-created_at",
+          "column-08-08-picked_up_at",
+          "column-08-09-canceled_at"
+        ],
+        "seqColumnIds": [
+          "column-08-01-order_id",
+          "column-08-02-user_id",
+          "column-08-03-store_id",
+          "column-08-04-pickup_barcode",
+          "column-08-05-status",
+          "column-08-06-total_amount",
+          "column-08-07-created_at",
+          "column-08-08-picked_up_at",
+          "column-08-09-canceled_at"
+        ],
+        "ui": {
+          "x": 380,
+          "y": 1050,
+          "zIndex": 8,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-09-order_items": {
+        "id": "table-09-order_items",
+        "name": "order_items",
+        "comment": "",
+        "columnIds": [
+          "column-09-01-order_id",
+          "column-09-02-product_id",
+          "column-09-03-quantity",
+          "column-09-04-ordered_price"
+        ],
+        "seqColumnIds": [
+          "column-09-01-order_id",
+          "column-09-02-product_id",
+          "column-09-03-quantity",
+          "column-09-04-ordered_price"
+        ],
+        "ui": {
+          "x": 980,
+          "y": 1080,
+          "zIndex": 9,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "table-10-payments": {
+        "id": "table-10-payments",
+        "name": "payments",
+        "comment": "",
+        "columnIds": [
+          "column-10-01-payment_id",
+          "column-10-02-order_id",
+          "column-10-03-amount",
+          "column-10-04-payment_method",
+          "column-10-05-status",
+          "column-10-06-paid_at",
+          "column-10-07-refunded_at"
+        ],
+        "seqColumnIds": [
+          "column-10-01-payment_id",
+          "column-10-02-order_id",
+          "column-10-03-amount",
+          "column-10-04-payment_method",
+          "column-10-05-status",
+          "column-10-06-paid_at",
+          "column-10-07-refunded_at"
+        ],
+        "ui": {
+          "x": 1550,
+          "y": 1090,
+          "zIndex": 10,
+          "widthName": 160,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "column-01-01-user_id": {
+        "id": "column-01-01-user_id",
+        "tableId": "table-01-users",
+        "name": "user_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-01-02-login_id": {
+        "id": "column-01-02-login_id",
+        "tableId": "table-01-users",
+        "name": "login_id",
+        "comment": "UQ",
+        "dataType": "varchar",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-01-03-password_hash": {
+        "id": "column-01-03-password_hash",
+        "tableId": "table-01-users",
+        "name": "password_hash",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-01-04-user_name": {
+        "id": "column-01-04-user_name",
+        "tableId": "table-01-users",
+        "name": "user_name",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-01-05-role": {
+        "id": "column-01-05-role",
+        "tableId": "table-01-users",
+        "name": "role",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-01-06-created_at": {
+        "id": "column-01-06-created_at",
+        "tableId": "table-01-users",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-01-store_id": {
+        "id": "column-02-01-store_id",
+        "tableId": "table-02-stores",
+        "name": "store_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-02-source_store_key": {
+        "id": "column-02-02-source_store_key",
+        "tableId": "table-02-stores",
+        "name": "source_store_key",
+        "comment": "UQ",
+        "dataType": "varchar",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-03-store_name": {
+        "id": "column-02-03-store_name",
+        "tableId": "table-02-stores",
+        "name": "store_name",
+        "comment": "UQ",
+        "dataType": "varchar",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-04-brand": {
+        "id": "column-02-04-brand",
+        "tableId": "table-02-stores",
+        "name": "brand",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-05-address": {
+        "id": "column-02-05-address",
+        "tableId": "table-02-stores",
+        "name": "address",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-06-latitude": {
+        "id": "column-02-06-latitude",
+        "tableId": "table-02-stores",
+        "name": "latitude",
+        "comment": "",
+        "dataType": "double",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-07-longitude": {
+        "id": "column-02-07-longitude",
+        "tableId": "table-02-stores",
+        "name": "longitude",
+        "comment": "",
+        "dataType": "double",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-08-opening_hours": {
+        "id": "column-02-08-opening_hours",
+        "tableId": "table-02-stores",
+        "name": "opening_hours",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-09-image_path": {
+        "id": "column-02-09-image_path",
+        "tableId": "table-02-stores",
+        "name": "image_path",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-02-10-is_active": {
+        "id": "column-02-10-is_active",
+        "tableId": "table-02-stores",
+        "name": "is_active",
+        "comment": "",
+        "dataType": "boolean",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-03-01-category_id": {
+        "id": "column-03-01-category_id",
+        "tableId": "table-03-categories",
+        "name": "category_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-03-02-category_name": {
+        "id": "column-03-02-category_name",
+        "tableId": "table-03-categories",
+        "name": "category_name",
+        "comment": "UQ",
+        "dataType": "varchar",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-03-03-display_order": {
+        "id": "column-03-03-display_order",
+        "tableId": "table-03-categories",
+        "name": "display_order",
+        "comment": "UQ",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-01-product_id": {
+        "id": "column-04-01-product_id",
+        "tableId": "table-04-products",
+        "name": "product_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-02-category_id": {
+        "id": "column-04-02-category_id",
+        "tableId": "table-04-products",
+        "name": "category_id",
+        "comment": "FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-03-product_name": {
+        "id": "column-04-03-product_name",
+        "tableId": "table-04-products",
+        "name": "product_name",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-04-manufacturer": {
+        "id": "column-04-04-manufacturer",
+        "tableId": "table-04-products",
+        "name": "manufacturer",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-05-package_size": {
+        "id": "column-04-05-package_size",
+        "tableId": "table-04-products",
+        "name": "package_size",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-06-description": {
+        "id": "column-04-06-description",
+        "tableId": "table-04-products",
+        "name": "description",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-07-image_path": {
+        "id": "column-04-07-image_path",
+        "tableId": "table-04-products",
+        "name": "image_path",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-04-08-is_limited": {
+        "id": "column-04-08-is_limited",
+        "tableId": "table-04-products",
+        "name": "is_limited",
+        "comment": "",
+        "dataType": "boolean",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-01-store_id": {
+        "id": "column-05-01-store_id",
+        "tableId": "table-05-inventories",
+        "name": "store_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-02-product_id": {
+        "id": "column-05-02-product_id",
+        "tableId": "table-05-inventories",
+        "name": "product_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-03-selling_price": {
+        "id": "column-05-03-selling_price",
+        "tableId": "table-05-inventories",
+        "name": "selling_price",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-04-stock_count": {
+        "id": "column-05-04-stock_count",
+        "tableId": "table-05-inventories",
+        "name": "stock_count",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-05-shelf_location": {
+        "id": "column-05-05-shelf_location",
+        "tableId": "table-05-inventories",
+        "name": "shelf_location",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-05-06-updated_at": {
+        "id": "column-05-06-updated_at",
+        "tableId": "table-05-inventories",
+        "name": "updated_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-06-01-cart_id": {
+        "id": "column-06-01-cart_id",
+        "tableId": "table-06-carts",
+        "name": "cart_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-06-02-user_id": {
+        "id": "column-06-02-user_id",
+        "tableId": "table-06-carts",
+        "name": "user_id",
+        "comment": "FK/UQ",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-06-03-store_id": {
+        "id": "column-06-03-store_id",
+        "tableId": "table-06-carts",
+        "name": "store_id",
+        "comment": "FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-06-04-created_at": {
+        "id": "column-06-04-created_at",
+        "tableId": "table-06-carts",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-06-05-updated_at": {
+        "id": "column-06-05-updated_at",
+        "tableId": "table-06-carts",
+        "name": "updated_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-07-01-cart_id": {
+        "id": "column-07-01-cart_id",
+        "tableId": "table-07-cart_items",
+        "name": "cart_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-07-02-product_id": {
+        "id": "column-07-02-product_id",
+        "tableId": "table-07-cart_items",
+        "name": "product_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-07-03-quantity": {
+        "id": "column-07-03-quantity",
+        "tableId": "table-07-cart_items",
+        "name": "quantity",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-07-04-added_at": {
+        "id": "column-07-04-added_at",
+        "tableId": "table-07-cart_items",
+        "name": "added_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-01-order_id": {
+        "id": "column-08-01-order_id",
+        "tableId": "table-08-orders",
+        "name": "order_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-02-user_id": {
+        "id": "column-08-02-user_id",
+        "tableId": "table-08-orders",
+        "name": "user_id",
+        "comment": "FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-03-store_id": {
+        "id": "column-08-03-store_id",
+        "tableId": "table-08-orders",
+        "name": "store_id",
+        "comment": "FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-04-pickup_barcode": {
+        "id": "column-08-04-pickup_barcode",
+        "tableId": "table-08-orders",
+        "name": "pickup_barcode",
+        "comment": "UQ",
+        "dataType": "varchar",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-05-status": {
+        "id": "column-08-05-status",
+        "tableId": "table-08-orders",
+        "name": "status",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-06-total_amount": {
+        "id": "column-08-06-total_amount",
+        "tableId": "table-08-orders",
+        "name": "total_amount",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-07-created_at": {
+        "id": "column-08-07-created_at",
+        "tableId": "table-08-orders",
+        "name": "created_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-08-picked_up_at": {
+        "id": "column-08-08-picked_up_at",
+        "tableId": "table-08-orders",
+        "name": "picked_up_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-08-09-canceled_at": {
+        "id": "column-08-09-canceled_at",
+        "tableId": "table-08-orders",
+        "name": "canceled_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-09-01-order_id": {
+        "id": "column-09-01-order_id",
+        "tableId": "table-09-order_items",
+        "name": "order_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-09-02-product_id": {
+        "id": "column-09-02-product_id",
+        "tableId": "table-09-order_items",
+        "name": "product_id",
+        "comment": "PK/FK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-09-03-quantity": {
+        "id": "column-09-03-quantity",
+        "tableId": "table-09-order_items",
+        "name": "quantity",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-09-04-ordered_price": {
+        "id": "column-09-04-ordered_price",
+        "tableId": "table-09-order_items",
+        "name": "ordered_price",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-01-payment_id": {
+        "id": "column-10-01-payment_id",
+        "tableId": "table-10-payments",
+        "name": "payment_id",
+        "comment": "PK",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-02-order_id": {
+        "id": "column-10-02-order_id",
+        "tableId": "table-10-payments",
+        "name": "order_id",
+        "comment": "FK/UQ",
+        "dataType": "bigint",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-03-amount": {
+        "id": "column-10-03-amount",
+        "tableId": "table-10-payments",
+        "name": "amount",
+        "comment": "",
+        "dataType": "integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-04-payment_method": {
+        "id": "column-10-04-payment_method",
+        "tableId": "table-10-payments",
+        "name": "payment_method",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-05-status": {
+        "id": "column-10-05-status",
+        "tableId": "table-10-payments",
+        "name": "status",
+        "comment": "",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-06-paid_at": {
+        "id": "column-10-06-paid_at",
+        "tableId": "table-10-payments",
+        "name": "paid_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "column-10-07-refunded_at": {
+        "id": "column-10-07-refunded_at",
+        "tableId": "table-10-payments",
+        "name": "refunded_at",
+        "comment": "",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 120,
+          "widthComment": 60,
+          "widthDataType": 80,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      }
+    },
+    "relationshipEntities": {
+      "relationship-01": {
+        "id": "relationship-01",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-03-categories",
+          "columnIds": [
+            "column-03-01-category_id"
+          ],
+          "x": 1370,
+          "y": 160,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-04-products",
+          "columnIds": [
+            "column-04-02-category_id"
+          ],
+          "x": 960,
+          "y": 420,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-02": {
+        "id": "relationship-02",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-02-stores",
+          "columnIds": [
+            "column-02-01-store_id"
+          ],
+          "x": 2350,
+          "y": 160,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-05-inventories",
+          "columnIds": [
+            "column-05-01-store_id"
+          ],
+          "x": 1480,
+          "y": 440,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-03": {
+        "id": "relationship-03",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-04-products",
+          "columnIds": [
+            "column-04-01-product_id"
+          ],
+          "x": 1370,
+          "y": 420,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-05-inventories",
+          "columnIds": [
+            "column-05-02-product_id"
+          ],
+          "x": 1480,
+          "y": 440,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-04": {
+        "id": "relationship-04",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-01-users",
+          "columnIds": [
+            "column-01-01-user_id"
+          ],
+          "x": 460,
+          "y": 170,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-06-carts",
+          "columnIds": [
+            "column-06-02-user_id"
+          ],
+          "x": 50,
+          "y": 510,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-05": {
+        "id": "relationship-05",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-02-stores",
+          "columnIds": [
+            "column-02-01-store_id"
+          ],
+          "x": 2350,
+          "y": 160,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-06-carts",
+          "columnIds": [
+            "column-06-03-store_id"
+          ],
+          "x": 50,
+          "y": 510,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-06": {
+        "id": "relationship-06",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-06-carts",
+          "columnIds": [
+            "column-06-01-cart_id"
+          ],
+          "x": 460,
+          "y": 510,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-07-cart_items",
+          "columnIds": [
+            "column-07-01-cart_id"
+          ],
+          "x": 500,
+          "y": 540,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-07": {
+        "id": "relationship-07",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-04-products",
+          "columnIds": [
+            "column-04-01-product_id"
+          ],
+          "x": 1370,
+          "y": 420,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-07-cart_items",
+          "columnIds": [
+            "column-07-02-product_id"
+          ],
+          "x": 500,
+          "y": 540,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-08": {
+        "id": "relationship-08",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-01-users",
+          "columnIds": [
+            "column-01-01-user_id"
+          ],
+          "x": 460,
+          "y": 170,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-08-orders",
+          "columnIds": [
+            "column-08-02-user_id"
+          ],
+          "x": 380,
+          "y": 1120,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-09": {
+        "id": "relationship-09",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-02-stores",
+          "columnIds": [
+            "column-02-01-store_id"
+          ],
+          "x": 2350,
+          "y": 160,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-08-orders",
+          "columnIds": [
+            "column-08-03-store_id"
+          ],
+          "x": 380,
+          "y": 1120,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-10": {
+        "id": "relationship-10",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-08-orders",
+          "columnIds": [
+            "column-08-01-order_id"
+          ],
+          "x": 790,
+          "y": 1120,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-09-order_items",
+          "columnIds": [
+            "column-09-01-order_id"
+          ],
+          "x": 980,
+          "y": 1150,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-11": {
+        "id": "relationship-11",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-04-products",
+          "columnIds": [
+            "column-04-01-product_id"
+          ],
+          "x": 1370,
+          "y": 420,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-09-order_items",
+          "columnIds": [
+            "column-09-02-product_id"
+          ],
+          "x": 980,
+          "y": 1150,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      },
+      "relationship-12": {
+        "id": "relationship-12",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "table-08-orders",
+          "columnIds": [
+            "column-08-01-order_id"
+          ],
+          "x": 790,
+          "y": 1120,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "table-10-payments",
+          "columnIds": [
+            "column-10-02-order_id"
+          ],
+          "x": 1550,
+          "y": 1160,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1782029296249,
+          "createAt": 1782029296249
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

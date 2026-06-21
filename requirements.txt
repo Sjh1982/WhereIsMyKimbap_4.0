@@ -1,0 +1,4 @@
+duckdb==1.4.3
+flet==0.85.2
+pytest==9.0.2
+Pillow==12.1.1
