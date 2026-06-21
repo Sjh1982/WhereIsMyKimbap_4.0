@@ -30,18 +30,18 @@ TABLES = {
 }
 
 RELATIONS = [
-    ("categories", "category_id", "products", "category_id", "1:N"),
-    ("stores", "store_id", "inventories", "store_id", "1:N"),
-    ("products", "product_id", "inventories", "product_id", "1:N"),
+    ("categories", "category_id", "products", "category_id", "1:0..N"),
+    ("stores", "store_id", "inventories", "store_id", "1:0..N"),
+    ("products", "product_id", "inventories", "product_id", "1:0..N"),
     ("users", "user_id", "carts", "user_id", "1:0..1"),
-    ("stores", "store_id", "carts", "store_id", "1:N"),
-    ("carts", "cart_id", "cart_items", "cart_id", "1:N"),
-    ("products", "product_id", "cart_items", "product_id", "1:N"),
-    ("users", "user_id", "orders", "user_id", "1:N"),
-    ("stores", "store_id", "orders", "store_id", "1:N"),
-    ("orders", "order_id", "order_items", "order_id", "1:N"),
-    ("products", "product_id", "order_items", "product_id", "1:N"),
-    ("orders", "order_id", "payments", "order_id", "1:1"),
+    ("stores", "store_id", "carts", "store_id", "1:0..N"),
+    ("carts", "cart_id", "cart_items", "cart_id", "1:0..N"),
+    ("products", "product_id", "cart_items", "product_id", "1:0..N"),
+    ("users", "user_id", "orders", "user_id", "1:0..N"),
+    ("stores", "store_id", "orders", "store_id", "1:0..N"),
+    ("orders", "order_id", "order_items", "order_id", "1:0..N"),
+    ("products", "product_id", "order_items", "product_id", "1:0..N"),
+    ("orders", "order_id", "payments", "order_id", "1:0..1"),
 ]
 
 POSITIONS = {
@@ -89,9 +89,11 @@ def build_erd_png() -> None:
             end = (child_rect[0] if direction == 1 else child_rect[2], ccenter[1])
             draw.line((*start, *end), fill="#475569", width=3)
             draw.line((start[0] + 10 * direction, start[1] - 11, start[0] + 10 * direction, start[1] + 11), fill="#475569", width=3)
-            if cardinality.endswith(":1"):
+            if cardinality.endswith("0..1"):
+                draw.ellipse((end[0] - 31 * direction - 6, end[1] - 6, end[0] - 31 * direction + 6, end[1] + 6), outline="#475569", width=3)
                 draw.line((end[0] - 10 * direction, end[1] - 11, end[0] - 10 * direction, end[1] + 11), fill="#475569", width=3)
             else:
+                draw.ellipse((end[0] - 30 * direction - 6, end[1] - 6, end[0] - 30 * direction + 6, end[1] + 6), outline="#475569", width=3)
                 for offset in (-13, 0, 13):
                     draw.line((end[0], end[1], end[0] - 18 * direction, end[1] + offset), fill="#475569", width=3)
         else:
@@ -100,9 +102,11 @@ def build_erd_png() -> None:
             end = (ccenter[0], child_rect[1] if direction == 1 else child_rect[3])
             draw.line((*start, *end), fill="#475569", width=3)
             draw.line((start[0] - 11, start[1] + 10 * direction, start[0] + 11, start[1] + 10 * direction), fill="#475569", width=3)
-            if cardinality.endswith(":1"):
+            if cardinality.endswith("0..1"):
+                draw.ellipse((end[0] - 6, end[1] - 31 * direction - 6, end[0] + 6, end[1] - 31 * direction + 6), outline="#475569", width=3)
                 draw.line((end[0] - 11, end[1] - 10 * direction, end[0] + 11, end[1] - 10 * direction), fill="#475569", width=3)
             else:
+                draw.ellipse((end[0] - 6, end[1] - 30 * direction - 6, end[0] + 6, end[1] - 30 * direction + 6), outline="#475569", width=3)
                 for offset in (-13, 0, 13):
                     draw.line((end[0], end[1], end[0] + offset, end[1] - 18 * direction), fill="#475569", width=3)
         draw.text(((start[0] + end[0]) // 2 + 5, (start[1] + end[1]) // 2 - 23), cardinality, font=font(13, True), fill="#334155")
