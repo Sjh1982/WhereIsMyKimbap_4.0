@@ -33,6 +33,7 @@
 | UI-01 | Flet 실행 화면 | 실제 렌더러 PNG 7개 완료 |
 | IMG-01 | DB 이미지 경로와 Flet 출력 | 구현·테스트 완료 |
 | TEST-01 | 스키마·시드·CRUD·JOIN·주문 테스트 | 11개 통과 |
+| GIT-01 | GitHub Public Repository 공개 | `Sjh1982/WhereIsMyKimbap_4.0` 완료 |
 
 ## 3.0에서 유지·개선할 핵심
 

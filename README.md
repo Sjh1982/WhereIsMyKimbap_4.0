@@ -2,6 +2,8 @@
 
 금오공대 주변 편의점의 상품과 재고를 찾고, 한 매장의 상품을 장바구니에 담아 주문·결제·픽업까지 체험하는 Python 데스크톱 앱이다.
 
+Public Repository: https://github.com/Sjh1982/WhereIsMyKimbap_4.0
+
 ## 기술 구성
 
 - Python 3.13
