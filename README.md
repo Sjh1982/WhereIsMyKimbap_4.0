@@ -57,7 +57,7 @@ python -m pytest -q
 - 관계형 스키마와 BCNF: `docs/logical_design/`
 - Use Case, Sequence, Repository Interface, 전체 구성도: `docs/`
 - 구현 전 와이어프레임 6개: `docs/ui_design/`
-- 실제 Flet 실행 화면 7개: `docs/screenshots/`
+- 실제 Flet 실행 화면 8개: `docs/screenshots/`
 - JOIN SQL, 전체 CSV, 보고서용 PNG: `database/queries/`, `docs/sql_results/`
 
 증빙 자료를 다시 만들려면 다음을 실행한다.
